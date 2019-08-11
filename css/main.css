@@ -255,10 +255,7 @@ a {
 .currency ul li {
     height: 18px:
 }
-/*.currency ul li:hover {
-    cursor: pointer;
-    background-color: #ccc;
-}*/
+
 .currency li:nth-child(2n) {
     display: none;
 }
@@ -413,7 +410,6 @@ span.p_text {
 .block_image img, 
 .block_image_2n img {
   width: 740px;
-
 }
 
 .block_info,
@@ -594,7 +590,9 @@ margin-left: 175px;
   height: 100px;
 }
 
-.as {
+
+
+.slider_item {
     cursor: pointer;
       width: 167px !important;
 height: 267px !important;
@@ -607,7 +605,9 @@ height: 267px !important;
     -webkit-align-items: center;
                 align-items: center;
 }
-.as:hover {
+
+
+.slider_item:hover {
     background: #000;
 }
 
@@ -625,7 +625,7 @@ height: 267px !important;
 }
 
 
-.as span {
+.slider_item span {
     margin-top: 20px;
 color: #2b2a29;
 font-family: "GothamPro";
