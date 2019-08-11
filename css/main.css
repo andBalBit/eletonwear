@@ -319,7 +319,21 @@ a {
     font-family: 'GothamProMedium';
     font-size: 11px;
     text-transform: uppercase;
-    border-bottom: 1px solid;
+}
+
+.nav_menu ul li:after {
+    content: '';
+   display: block;
+     width: 0;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #000;
+  transition: all .3s;
+}
+.nav_menu ul li:hover:after {
+  width: 100%;
 }
 
 
