@@ -768,7 +768,8 @@ body > div.slider-for.slick-initialized.slick-slider > div > div > div > div.sli
 
 .advantages span,
 .video_block span,
-.news span:nth-child(1) {
+.news span:nth-child(1),
+.reviews span:nth-child(1) {
     /* Style for "ПОЧЕМУ ВЫБ" */
 width: 630px;
 height: 28px;
@@ -784,7 +785,8 @@ letter-spacing: 2.4px;
 
 .advantages span:nth-child(1):after,
 .video_block span:after,
-.news span:nth-child(1):after  {
+.news span:nth-child(1):after,
+.reviews span:nth-child(1):after,  {
 
     margin: 53px auto;
     content: '';
@@ -972,7 +974,8 @@ iframe {
 
  }
 
- .news span:nth-child(1) {
+ .news span:nth-child(1),
+ .reviews span:nth-child(1) {
      margin-top: 120px;
      width: 243px;
  }
@@ -1033,6 +1036,275 @@ line-height: 22px;
       -webkit-transform: scale(1.05);
   transform: scale(1.05);
 }
+.reviews {
+    display: flex;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-align-items: center;
+            align-items: center;
+    padding-bottom: 140px;
+}
+
+.reviews span:nth-child(1) {
+    width: 191px;
+}
+
+.reviews_item {
+    display: flex !important;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-align-items: center;
+            align-items: center;
+}
+
+.reviews_item span:nth-child(1) {
+    width: 770px;
+color: #393939;
+font-family: "GothamPro";
+font-size: 13px;
+font-weight: 300;
+    line-height: 20px; 
+    text-transform: none;
+    letter-spacing: 1px; 
+    text-align: center;
+        margin-top: 90px;
+    
+}
+
+.reviews_item span:nth-child(2)  {
+    color: #2b2a29;
+font-family: "GothamPro";
+font-size: 14px;
+font-weight: 700;
+letter-spacing: 0.56px;
+line-height: 26px;
+text-transform: uppercase;
+    margin-top: 80px;
+}
+
+.reviews_slider {
+    width: 900px;
+    display: flex;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+.slick-dots li button:before {
+  font-size: 45px !important;
+}
+
+.footer {
+    padding-top: 65px;
+        background-color: #f1f2f3;
+}
+.info_block {
+
+    display: flex;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-justify-content: space-around;
+            justify-content: space-around;
+}
+
+.brend_block,
+.about_company,
+.subscribe {
+  
+    padding-bottom: 100px;
+    display: flex;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-justify-content: space-between;
+            justify-content: space-between;
+}
+
+.contacts_footer  {
+    display: flex;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+ .brend_block {
+    display: flex;
+    -webkit-justify-content: space-between;
+            justify-content: space-between;
+}
+
+.brend_block .logo {
+    padding-top: 0;
+}
+
+.logo span {
+    display: block;
+       width: 255px;
+margin-top: 20px;
+height: 29px;
+color: #252525;
+font-family: "GothamPro";
+font-size: 12px;
+font-weight: 300;
+line-height: 18px;
+/* Text style for "Бренд с вы" */
+letter-spacing: 0.48px;
+
+}
+
+.about_company span,
+.subscribe span,
+.contacts_footer span {
+    width: 202px;
+color: #606060;
+font-family: "GothamPro";
+font-size: 11px;
+font-weight: 300;
+line-height: 18px;
+color: #2b2a29;
+font-size: 11px;
+font-weight: 900;
+letter-spacing: 1.1px;
+line-height: 19px;
+text-transform: uppercase;
+}
+
+
+
+
+
+.about_company ul {
+    list-style: none;
+    margin-left: -22px;
+}
+
+.about_company a {
+    font-family: "GothamPro";
+letter-spacing: 0.72px;
+line-height: 33px;
+color: #2b2a29;
+font-size: 11px;
+font-weight: 500;
+letter-spacing: 1.1px;
+
+
+}
+
+.about_company a:hover {
+    color: #000 ;
+}
+
+
+.about_company span:nth-child(1) {
+    
+    margin-bottom: 45px;
+
+}
+
+
+.etc {
+    display: flex;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-justify-content: space-between;
+            justify-content: space-between;
+        padding-bottom: 20px;
+}
+.etc span {
+    width: 214px;
+    height: 10px;
+    color: #606060;
+    font-family: "GothamPro";
+    font-size: 11px;
+    font-weight: 300;
+    line-height: 18px;
+    margin-left: 100px;
+    padding-bottom: 25px;
+}
+
+
+
+.input_mail input:nth-child(1) {
+outline: none;
+padding-left: 30px;
+width: 200px;
+height: 43px;
+border-radius: 22px;
+border: 1px solid #000000;
+background-color: #f1f2f3;
+opacity: 0.63;
+}
+
+.input_mail button[type="submit"] {
+    cursor: pointer;
+    width: 20px;
+    position: relative;
+    margin: -39px;
+    height: 12px;
+    border: none; 
+    outline: none;
+    background: url(../img/next.png) no-repeat 50% 50%; 
+   }
+
+input:after {
+    content: '';
+    display: block;
+    width: 109px;
+    height: 2px;
+    background-color: #252525;
+}
+
+
+.cont_foot_cont {
+    display: flex;
+        margin-top: 40px;
+        
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+.cont_foot_cont span {
+    color: #2b2a29;
+font-family: "GothamPro";
+font-size: 11px;
+font-weight: 500;
+letter-spacing: 1.1px;
+text-transform: uppercase;
+/* Text style for "Украина, К" */
+letter-spacing: 0.72px;
+line-height: 33px;
+}
+
+.fa-facebook,
+.fa-instagram {
+    color: #000;
+    font-size: 15px !important;
+   
+}
+.social_link  span {
+    width: 30px;
+}
+.social_link {
+    display: flex;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+}
+
+
+.payment_system span {
+    font-size: 20px;
+    width: 45px;
+    margin-left: 30px;
+}
+.payment_system {
+    margin-right: 100px;
+}
+
+
 
 
 

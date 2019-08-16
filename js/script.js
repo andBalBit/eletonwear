@@ -35,6 +35,16 @@ $('.slider-nav').slick({
   dots: true  
 });
 
+$('.reviews_slider').slick({
+  dots: true,
+  infinite: true,
+  speed: 900,
+  slidesToShow: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  adaptiveHeight: true
+});
+
 
 
 $('.slider_item').hover(function(){
