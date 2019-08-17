@@ -32,7 +32,6 @@ $('.slider-nav').slick({
     dots: false,
     centerMode: false,
     focusOnSelect: true,
-  dots: true  
 });
 
 $('.reviews_slider').slick({

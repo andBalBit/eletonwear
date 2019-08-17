@@ -148,6 +148,11 @@ a {
 @font-face {
   font-family: 'GothamPro';
   src: url("../fonts/GothaProReg.otf") format("opentype");
+  src: url('../fonts/GothaProReg.eot');
+src: url('../fonts/GothaProReg.eot') format('embedded-opentype'),
+url('../fonts/GothaProReg.woff') format('woff'),
+url('../fonts/GothaProReg.ttf') format('truetype'),
+url('../fonts/GothaProReg.svg') format('svg');
 }
 
 @font-face {
@@ -159,9 +164,17 @@ a {
   src: url("../fonts/GothaProBol.otf") format("opentype");
 }
 @font-face {
-    font-family: 'Segoe Script';
-    src: url('../fonts/segoesc.ttf') format('truetype');
+font-family: 'Segoe Script';
+src: url('../fonts/segoescb.eot');
+src: url('../fonts/segoescb.eot') format('embedded-opentype'),
+url('../fonts/segoescb.woff') format('woff'),
+url('../fonts/segoesc.ttf') format('truetype'),
+url('../fonts/segoescb.svg') format('svg');
+font-weight: normal;
+font-style: normal;
 }
+
+
 
 .wrapper {
     margin: 0 auto;
@@ -184,7 +197,7 @@ a {
     flex-direction: row;
 }
 
-.header {
+.header_cont {
     display: flex;
     background-color: white;
     opacity: 0.9;
@@ -286,7 +299,7 @@ a {
 }
 
 
-.menu { 
+.menu_cont { 
     z-index: 999;
     position: sticky;
     top: 0;
@@ -414,7 +427,6 @@ span.p_text {
 
 .block_info,
 .block_info_2n {
-    margin-left: 130px;
     display: flex;
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
@@ -515,6 +527,8 @@ letter-spacing: 0.56px;
     -ms-flex-direction: row;
     flex-direction: row;
     width: 100%;
+    -webkit-justify-content: space-between;
+            justify-content: space-between;
 }
 
 
@@ -541,16 +555,23 @@ body > div.slider-for > div.slider_child.slick-initialized.slick-slider > button
     display: block;
     background-position: center;
 }
-body > div.women_clothes > div > button.slick-next.slick-arrow {
+body > div:nth-child(4) > div > div.slider.slick-initialized.slick-slider > button.slick-prev.slick-arrow{
     position: absolute;
-    top: 475px;
-    right: -270px;
+    left: 813px;
+    top: 474px; border: 1px solid #ccc;
+    border-radius: 50%;
+    width: 53px;
+    height: 53px;
 }
 
-body > div.women_clothes > div > button.slick-prev.slick-arrow {
+body > div:nth-child(4) > div > div.slider.slick-initialized.slick-slider > button.slick-next.slick-arrow{
     position: absolute;
-    left: 893px;
+    left: 880px;
     top: 475px;
+      border: 1px solid #ccc;
+    border-radius: 50%;
+    width: 53px;
+    height: 53px;
 }
 .slick-next:before {    
     background-image: url(../img/next.png);
@@ -586,7 +607,7 @@ body > div.women_clothes > div > button.slick-prev.slick-arrow {
 
 
 .slider-nav  {
-    width: 1200px;
+   width: 1170px;
     height: 100px;
 }
 
@@ -612,7 +633,7 @@ body > div.women_clothes > div > button.slick-prev.slick-arrow {
 }
 
 .slider_2n {
-    margin-bottom: 137px;
+        margin-bottom: 167px;
     display: flex;
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
@@ -662,17 +683,25 @@ body > div.women_clothes > div > button.slick-prev.slick-arrow {
     margin-top: 35px;
 }
 
-body > div.slider-for.slick-initialized.slick-slider > div > div > div > div.slider_child.slick-initialized.slick-slider > button.slick-prev.slick-arrow{
+body > div:nth-child(6) > div > div > div > div.slider-for_item.slick-slide.slick-current.slick-active > div.slider_child.slick-initialized.slick-slider > button.slick-prev.slick-arrow{
     position: absolute;
     top: 438px;
-    left: -456px;
+    left: -425px;
+        border: 1px solid #ccc;
+    border-radius: 50%;
+    width: 53px;
+    height: 53px;
 }
 
-body > div.slider-for.slick-initialized.slick-slider > div > div > div > div.slider_child.slick-initialized.slick-slider > button.slick-next.slick-arrow{
+body > div:nth-child(6) > div > div > div > div.slider-for_item.slick-slide.slick-current.slick-active > div.slider_child.slick-initialized.slick-slider > button.slick-next.slick-arrow{
     position: absolute;
-    left: -385px;
+    left: -350px;
     top: 438px;
     position: absolute;
+        border: 1px solid #ccc;
+    border-radius: 50%;
+    width: 53px;
+    height: 53px;
 }
 
 .bady {
@@ -783,7 +812,7 @@ text-transform: uppercase;
 letter-spacing: 2.4px;
 }
 
-.advantages span:nth-child(1):after,
+.advantages > span:after,
 .video_block span:after,
 .news span:nth-child(1):after,
 .reviews span:nth-child(1):after,  {
@@ -1304,6 +1333,9 @@ line-height: 33px;
     margin-right: 100px;
 }
 
+.wrapper {
+    width: 1170px;
+}
 
 
 
